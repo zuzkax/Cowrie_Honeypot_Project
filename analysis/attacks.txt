@@ -1,0 +1,44 @@
+session: 9a50cd5862c8 
+	src_ip 113.26.87.239
+	src_port 41470
+	telnet 2223
+	time 2024-03-06 22:35
+	duration 2 sec
+
+CMD:
+  system
+  enable
+  shell
+  sh
+  cat /proc/mounts; /bin/busybox LSMRW
+  tftp; wget; /bin/busybox LSMRW
+  cd /dev/shm; cat .s || cp /bin/echo .s; /bin/busybox LSMRW
+  dd bs=52 count=1 if=.s || cat .s || while read i; do echo $i; done < .s<<while read i
+  /bin/busybox LSMRW<<rm .s; exit
+
+
+session: 87a6c8f2c579
+	src_ip 123.173.70.38
+	src_port 54037
+	telnet 2223
+	time 2024-03-07 05:57:37
+	duration 3 sec
+
+CMD:
+	enable
+	system(cnf)
+	shell
+	sh
+	cat /proc/mounts; /bin/busybox VSHRM
+	cd /dev/shm; cat .s || cp /bin/echo .s; /bin/busybox VSHRM
+	tftp; wget; /bin/busybox VSHRM
+	dd bs=52 count=1 if=.s || cat .s || while read i; do echo $i; done < .s
+	/bin/busybox VSHRM
+	rm .s; exit
+
+session: 103b371dd226 
+	src_ip 185.191.126.213
+	src_port 59572
+	ssh 2222
+	time 2024-03-11 15:13:50
+	duration 47 sec
