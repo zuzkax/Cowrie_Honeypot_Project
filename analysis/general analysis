@@ -1,6 +1,8 @@
 #general analysis
 
 ================================== MOST COMMON IPS ================================== 
+
+IP			  reps
 1. 51.75.45.185	          115,611
 2. 123.127.10.217	  12,392
 3. 146.190.96.229	  11,181
@@ -21,10 +23,48 @@
 
 ================================== MOST COMMON PASSWORDS ==================================
 
+PASSWORD		reps
+1. 123456		2,431
+2. admin		1,443
+3. 1234			1,212
+4. broadguam1		988
+5. password		827
+6. root			807
+7. 12345		670
+8. 123			523
+9. 1			367
+10. user		363
+
 ================================== MOST COMMON USERNAME ==================================
 
+USERNAME		reps
+1. root			39,123
+2. admin		6,341
+3. user			858
+4. guest		772
+5. ubnt			717
+6. default		608
+7. oracle		561
+8. support		448
+9. test			438
+10. supervisor		427
+
+visualization: 
 ================================== MOST COMMON PAIRS ==================================
 
+PASSWORD-USERNAME	reps
+1. broadguam1-root	988
+2. admin-admin		659
+3. root-root		658
+4. admin-root		468
+5. 1234-admin		360
+6. 123456-admin		278
+7. 1234-root		267
+8. 123456-root		263
+9. password-admin	242
+10. admin1234-admin	236
+
+visualization:
 ================================== LOGIN ATTEMPTS ==================================
 	cowrie.login.success 37910 (55,8%)
 	cowrie.login.falied 30073  (44,2%)
