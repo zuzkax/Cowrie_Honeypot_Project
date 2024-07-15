@@ -68,8 +68,8 @@
 
 ## Login Attempts
 
-- **Success:** 37,910 (55.8%)
-- **Failed:** 30,073 (44.2%)
+- **Success (cowrie.login.success):** 37,910 (55.8%)
+- **Failed (cowrie.login.falied):** 30,073 (44.2%)
 
 ## Most Common Commands
 
