@@ -93,7 +93,7 @@
 
 ### Top 3 longest sessions
 
-| Duration | count | 
+| Duration | Count | 
 |---------|-------|
 | 201.97 sec | 1 |
 | 191.43 sec | 1 |
@@ -101,7 +101,7 @@
 
 ### Top 3 shortest sessions
 
-| Duration | count | 
+| Duration | Count | 
 |---------|-------|
 | 0.0002592  sec | 1 |
 | 0.0002639 sec | 1 |
@@ -109,3 +109,20 @@
 
 - Average duration **7.3686 sec.**
 - Count cowrie.session.closed = **67,645**
+
+## Activity 
+
+| Date | Hour | Count | 
+|-------|------|------|
+| 28.02 | 23-00 | 1473 |
+| 02.03 | 22-23 | 2354 |
+| 06.03 | 12-13 | 1132 |
+| 06.03 | 13-14 | 3688 |
+| 07.03 | 8-9 | 1787 |
+| 10.03 | 03-04 | 2383 |
+| 11.03 | 17-18 | 1214 |
+| 19.03 | 22-23 | 2445 |
+| 06.03 | 13-14 | 3688 |
+...
+
+- count > 1000 per hour
